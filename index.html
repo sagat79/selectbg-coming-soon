@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SelectBG | Очаквайте скоро</title>
+
+    <meta name="description" content="SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.">
+    <meta name="keywords" content="недвижими имоти, Велико Търново, SelectBG, имоти, агенция, продажба, наем">
+    <meta name="author" content="SelectBG Estate Agents">
+    <meta name="theme-color" content="#004d40">
+
+    <meta property="og:locale" content="bg_BG">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Продажби и наеми на имоти във Велико Търново | SelectBG">
+    <meta property="og:description" content="SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.">
+    <meta property="og:url" content="https://www.selectbg.net/">
+    <meta property="og:site_name" content="SelectBG">
+    <meta property="og:image" content="https://www.selectbg.net/assets/images/social-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Логото на SelectBG върху фон на красив имот">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Продажби и наеми на имоти във Велико Търново | SelectBG">
+    <meta name="twitter:description" content="SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.">
+    <meta name="twitter:image" content="https://www.selectbg.net/assets/images/social-preview.jpg">
+    <meta name="twitter:site" content="@SelectBGnet">
+    <meta name="twitter:creator" content="@SelectBGnet">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #004d40;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .language-switcher {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .flag {
+            cursor: pointer;
+            width: 40px;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .flag:hover {
+            opacity: 0.8;
+        }
+        
+        .links-section a {
+            color: #004d40;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 5px;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+
+        .inactive-link {
+            text-decoration: none;
+            color: #666;
+            cursor: default;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <img src="assets/images/select-bg-logo.png" alt="Лого на SelectBG Estate Agents">
+        </div>
+
+        <div id="content-bg" class="language-content">
+            <h1>Очаквайте скоро!</h1>
+            <p>
+                Уважаеми клиенти, работим усилено по обновяването на нашия уебсайт. Очаквайте скоро да се върнем с нова и по-добра визия!
+            </p>
+            <p>
+                Докато нашият нов сайт е в процес на изграждане, Вие можете да разгледате нашите актуални оферти в
+                <a href="https://selectbg.imot.bg/" target="_blank" rel="noopener noreferrer">imot.bg</a> и
+                <span class="inactive-link">Rightmove</span>.
+            </p>
+            <p>
+                Благодарим за вашето търпение и разбиране.
+            </p>
+            <p>
+                С уважение,<br>
+                Екипът на SelectBG Estate Agents
+            </p>
+        </div>
+
+        <div id="content-en" class="language-content" style="display:none;">
+            <h1>Coming Soon!</h1>
+            <p>
+                Dear customers, we are working hard on updating our website. We will soon be back with a new and better version!
+            </p>
+            <p>
+                While our new website is under construction, you can view our current property listings on
+                <a href="https://selectbg.imot.bg/" target="_blank" rel="noopener noreferrer">imot.bg</a> и
+                <span class="inactive-link">Rightmove</span>.
+            </p>
+            <p>
+                Thank you for your patience and understanding.
+            </p>
+            <p>
+                Sincerely,<br>
+                The SelectBG Estate Agents Team
+            </p>
+        </div>
+
+        <div class="language-switcher">
+            <img src="https://flagcdn.com/bg.svg" class="flag" onclick="setLanguage('bg')" alt="Bulgarian Flag" title="Bulgarian">
+            <img src="https://flagcdn.com/gb.svg" class="flag" onclick="setLanguage('en')" alt="English Flag" title="English">
+        </div>
+
+    </div>
+
+    <script>
+        function setLanguage(lang) {
+            const bgContent = document.getElementById('content-bg');
+            const enContent = document.getElementById('content-en');
+            const linkTextImotBg = "imot.bg";
+            const linkTextRightmove = "Rightmove";
+
+            if (lang === 'bg') {
+                bgContent.style.display = 'block';
+                enContent.style.display = 'none';
+                document.title = 'SelectBG | Очаквайте скоро';
+                
+                // Update Meta Tags for Bulgarian
+                document.querySelector('meta[name="description"]').setAttribute('content', 'SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.');
+                document.querySelector('meta[name="keywords"]').setAttribute('content', 'недвижими имоти, Велико Търново, SelectBG, имоти, агенция, продажба, наем');
+                document.querySelector('meta[property="og:locale"]').setAttribute('content', 'bg_BG');
+                document.querySelector('meta[property="og:title"]').setAttribute('content', 'Продажби и наеми на имоти във Велико Търново | SelectBG');
+                document.querySelector('meta[property="og:description"]').setAttribute('content', 'SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.');
+                document.querySelector('meta[name="twitter:title"]').setAttribute('content', 'Продажби и наеми на имоти във Велико Търново | SelectBG');
+                document.querySelector('meta[name="twitter:description"]').setAttribute('content', 'SelectBG: агенция за недвижими имоти във Велико Търново. Посредничество при покупка, продажба, даване под наем на недвижима собственост.');
+
+            } else if (lang === 'en') {
+                bgContent.style.display = 'none';
+                enContent.style.display = 'block';
+                document.title = 'SelectBG | Coming Soon';
+                
+                // Update Meta Tags for English
+                document.querySelector('meta[name="description"]').setAttribute('content', 'SelectBG: real estate agency in Veliko Tarnovo. Mediation in the purchase, sale, and rental of real estate.');
+                document.querySelector('meta[name="keywords"]').setAttribute('content', 'real estate, Veliko Tarnovo, SelectBG, property, agency, sale, rent');
+                document.querySelector('meta[property="og:locale"]').setAttribute('content', 'en_US');
+                document.querySelector('meta[property="og:title"]').setAttribute('content', 'Property sales and rentals in Veliko Tarnovo | SelectBG');
+                document.querySelector('meta[property="og:description"]').setAttribute('content', 'SelectBG: real estate agency in Veliko Tarnovo. Mediation in the purchase, sale, and rental of real estate.');
+                document.querySelector('meta[name="twitter:title"]').setAttribute('content', 'Property sales and rentals in Veliko Tarnovo | SelectBG');
+                document.querySelector('meta[name="twitter:description"]').setAttribute('content', 'SelectBG: real estate agency in Veliko Tarnovo. Mediation in the purchase, sale, and rental of real estate.');
+            }
+        }
+
+        // Check browser language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const userLang = navigator.language || navigator.userLanguage;
+            if (userLang.startsWith('bg')) {
+                setLanguage('bg');
+            } else {
+                setLanguage('en');
+            }
+        });
+    </script>
+
+</body>
+</html>
